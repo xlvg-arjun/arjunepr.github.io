@@ -1,15 +1,16 @@
 {
+  "devDependencies": {
+    "brunch": "^2.10.9",
+    "stylus-brunch": "^2.10.0"
+  },
+	"scripts": {
+		"start": "brunch watch --server",
+		"build": "brunch build --production"
+	},
   "name": "my-page",
   "version": "1.0.0",
-  "description": "Just my personal Github page.",
-	"author": "@arjunepr",
   "main": "index.js",
-  "license": "MIT",
-	"scripts":{
-		"start": "rm -rf public &&  mkdir -p public && cp -r src/assets public/assets/ && stylus --sourcemap-inline -w src/style.styl -o public/style.css",
-		"build": "rm -rf public &&  mkdir -p public && cp -r src/assets public/assets/ && stylus -c --sourcemap src/style.styl -o public/style.css"
-	},
-  "devDependencies": {
-    "stylus": "^0.54.5"
-  }
+  "repository": "git@github.com:arjunepr/arjunepr.git",
+  "author": "Arjun Raju Pillai <revarjunr@gmail.com>",
+  "license": "MIT"
 }
