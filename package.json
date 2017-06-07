@@ -1,0 +1,15 @@
+{
+  "name": "my-page",
+  "version": "1.0.0",
+  "description": "Just my personal Github page.",
+	"author": "@arjunepr",
+  "main": "index.js",
+  "license": "MIT",
+	"scripts":{
+		"start": "rm -rf public &&  mkdir -p public && cp -r src/assets public/assets/ && stylus --sourcemap-inline -w src/style.styl -o public/style.css",
+		"build": "rm -rf public &&  mkdir -p public && cp -r src/assets public/assets/ && stylus -c --sourcemap src/style.styl -o public/style.css"
+	},
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
+}
