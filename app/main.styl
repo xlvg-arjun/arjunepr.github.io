@@ -1,10 +1,7 @@
 //Layout Color
-lColor = #222
+lColor = #000
 
-brand = #319C96
-brand1 = #91C9ED
-brand2 = #000
-brand = brand1
+brand = #91C9ED
 
 @import 'nib/normalize'
 
@@ -26,7 +23,7 @@ html
 
 body
   margin 0
-  background-color brand1
+  background-color brand
   color black
   font-family Arial, Helvetica, sans-serif
 
@@ -38,7 +35,7 @@ body
   text-align center
   width 100%
   background-color lColor
-  color brand
+  color white
   text-align center
   border 1px solid brand
   padding 1rem
@@ -74,12 +71,11 @@ body
       border-right none
 
   a
-    color brand
+    color white
     text-decoration none
     background-color lColor
     display block
     text-align center
-
 
 
 hr 
@@ -93,9 +89,9 @@ hr
   margin-top 10vh
   text-align center
   background-color white
-  width 80%
+  width 85%
   margin 10vh auto
-  padding 2rem
+  padding 2rem 1rem
   border-radius 5px
   min-height 79vh
 
@@ -104,7 +100,8 @@ hr
   line-height 1.2
   letter-spacing 0.025rem
 
-  
+  p
+    // font-family Courier New, Courier, monospace
 
 
 // Media Queries
@@ -114,10 +111,6 @@ hr
     font-size 3rem
 
   .mainArea
-    width 80%
     margin 0 auto
     min-height 100vh
-    background-color white
   
-  body
-    background-color brand1 
