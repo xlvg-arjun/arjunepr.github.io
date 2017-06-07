@@ -42,8 +42,8 @@ body
   text-align center
   border 1px solid brand
   padding 1rem
-  height auto
-  margin-bottom 10vh
+  height 10vh
+  // margin-bottom 10vh
 
   h1
     margin 0
@@ -58,7 +58,7 @@ body
   width 100%
   // display flex
   font-family "Icons"
-  font-size 5rem
+  font-size 4rem
   
   ul
     display flex
@@ -82,6 +82,42 @@ body
 
 
 
+hr 
+  // max-width: 100px;
+  // margin: 10vh auto;
+  border-width: 1px;
+  border-color: rgba(34, 34, 34, 0.1);
+
+
 .mainArea
-  margin-top 20vh
+  margin-top 10vh
   text-align center
+  background-color white
+  width 80%
+  margin 10vh auto
+  padding 2rem
+  border-radius 5px
+  min-height 79vh
+
+.component
+  padding 1rem
+  line-height 1.2
+  letter-spacing 0.025rem
+
+  
+
+
+// Media Queries
+
+@media screen and (min-width 800px)
+  .nav-bar
+    font-size 3rem
+
+  .mainArea
+    width 80%
+    margin 0 auto
+    min-height 100vh
+    background-color white
+  
+  body
+    background-color brand1 
