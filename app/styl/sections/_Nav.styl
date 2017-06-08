@@ -66,9 +66,16 @@
 @media(max-width 500px)
   .nav ul
     // flex-direction column
-    flex-wrap wrap
+    // flex-wrap wrap
+    position fixed
+    bottom 0
+    margin 0
+    flex-direction row
+    width 100%
+    padding 0
+    background-color myBlue
 
   .nav li
-    flex 1 1 100%
+    flex 1 1;
     border 1px solid black
-    margin-bottom 5px
+    margin 0
