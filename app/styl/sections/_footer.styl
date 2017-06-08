@@ -1,0 +1,49 @@
+#social
+  display flex
+  background-color lighten(aboutBlack, 25%)
+  // background url('svg/linkedIn.svg')
+  
+
+  div
+    flex 1 1 50%
+    text-align center
+
+
+
+ul.media-links
+  width 80%
+  margin 0 auto
+  padding  1rem 4rem
+  display flex
+  justify-content center
+
+.media-links a
+  flex 1 0 20%
+  margin 0 1rem
+  color white
+  display inline-block
+  border 1px solid black
+  padding 0.9rem 1rem
+  border-radius 50%
+  transition all 500ms linear
+
+  &:hover
+    background-color myBlue
+  
+#copyright
+  background-color myBlue
+  text-align center
+  padding 2.25rem
+  font-size 1.2rem
+  // font-weight bold
+  font-family Arial, Helvetica, sans-serif
+  transition all 250ms ease-in
+
+  
+
+@media(max-width 900px)
+  #social
+    flex-wrap wrap-reverse
+  
+    > *
+      flex 1 1 100%

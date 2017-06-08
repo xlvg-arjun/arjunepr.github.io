@@ -1,0 +1,64 @@
+myBlue = #5765B0
+
+aboutBlack = #212121
+
+ul
+  list-style-type none
+
+*
+  box-sizing border-box
+
+//Import normalize.css 
+@import "../../node_modules/normalize.css/normalize.css"
+
+
+//Import Nav
+@import "sections/_Nav"
+
+//Import about
+@import "sections/_about"
+
+//Import portfolio
+@import "sections/_portfolio"
+
+//Import contact
+@import "sections/_contact"
+
+//Import footer
+@import "sections/_footer"
+
+
+
+body
+  background-color #141414
+  color white
+
+#main
+  margin-top 5rem
+  width 80%
+  margin 5rem auto 0
+
+.brand
+  transition all 250ms ease-out
+  &:hover
+    letter-spacing 0.4rem
+
+
+@media(max-width 900px)
+  body
+    margin 0
+    padding 0
+  #main
+    margin 10rem 0 0
+    width 100%
+    padding 0
+
+
+@media(max-width 500px)
+
+  #about, #portfolio, #contact, #footer, #contact .info
+    font-size 0.8rem  
+
+  #main
+    margin 15rem 0 0
+    width 100%

@@ -1,0 +1,65 @@
+#contact
+  padding 2rem
+  background-color #1F1F1F
+  h2
+    text-align center
+    font-family Helvetica
+    text-transform uppercase
+  hr
+    border none
+    height 0.2rem
+    color #333
+    background @color
+
+
+#formAndInfo
+
+  display flex
+  width 100%
+
+  form
+    flex 1 0 50%
+    display flex
+    flex-direction column
+    min-height 20rem
+    justify-content space-around
+    padding 0 1rem
+
+
+  input, textarea
+    display block
+    background-color transparent
+    min-height 4rem
+    // height 5rem
+    // margin-bottom 2rem
+    border none
+    // flex 1 1 5rem
+    padding 2rem 1rem
+    border-bottom 1px solid #ccc
+
+  input:focus, textarea:focus
+    color white
+  
+  textarea
+    resize none
+
+  .info
+    flex 1 0 50%
+    padding 2rem
+    line-height 2
+    font-size 1.1rem
+    font-family Courier New, Courier, monospace
+
+@media(max-width 900px)
+  #formAndInfo
+    flex-wrap wrap-reverse
+
+  .info
+    flex 1 1 100%
+
+  form 
+    flex 1 1 100%
+
+  // @media(max-width 900px)
+  //   #contact
+  //     padding 0

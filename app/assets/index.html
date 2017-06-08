@@ -1,61 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Arjun's Site</title>
+    <title>React App Setup</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/c1cfbbf5c8.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <header id="header"></header>
 
-    <header class="site-header">
-      <h1>Let's Simplify</h1>
-    </header>
-
-    <main class="mainArea">
-      <hr>
-      <article class="component welcome">
-        <h3>Hey There?</h3>
-        <p>Thanks for taking the time to go through this page.</p> 
-        <p>I'm Arjun Raju Pillai (Call me Arjun, Jun, or June, or whatever) , and this is more or less my landing page.</p>
-        <p>I'm a 20 year old fledgling Javascript programmer and designer. Completely self taught.</p>
-        <p>P.S. I get the beginners' struggle quite well.</p>
-      </article>
-
-      <article class="component stand-for">
-        <h3>What are you about?</h3>
-        <p>I'm all about finding simpler and easier solutions. I find great joy in building tutorials and helping out anyone willing to learn.</p>
-      </article>
-
-      <article class="component how-will-i">
-        <h3>Is That All?</h3>
-        <p>Hell no! I want to be a serial entrepreneur. A Gary Vaynerchuk level success.</p>
-
-        <p>Now, all that aside, feel free to contact me for whatever purpose.</p>
-
-        <p>My email is revarjunr@gmail.com</p>
-
-        <p>I've put the major contact links in the navbar below. Links open in new tab.</p>
-        
-        <p>Yes, I like my nav-bar much better than the regular hamburger. Feel free to email me all about it.</p>
+    <main id="main">
       
-      </article>
+      <div id="about">
+        <div id="info">
+          <h3>I'm..</h3>
+          <ul>
+          <li>a Front End Developer</li>
+          <li>a UI + UX Design Enthusiast</li>
+          <li>a Fledgling Javascript Programmer</li>
+          <li>an Alpha Male</li>
+          <li>a Guts (Protagonist of Berserk Anime &amp; Manga) Fanboy</li>
+        </ul>
 
-      <article class="component social-network-fonts">
-        <h3>Hey, where did you get those..</h3>
-        <p>Social Media fonts? Get em <a href="http://www.1001fonts.com/social-circles-font.html" target="_blank">here</a></p>
-      </article>
-      <hr>
+          <h3>I'm committed to..</h3>
+          <ul>
+            <li>Design</li>
+            <li>Functional Programming</li>
+            <li>...and Myself</li>
+          </ul>
+        </div>
+        
+        <div class="img-zone">
+          <img alt="Not me. But isn't he adorable?" src="https://s-media-cache-ak0.pinimg.com/236x/3c/fc/ae/3cfcae8826e6abfe9d7b9ffa2f830696.jpg">
+        </div>
+      </div>
+      <div id="portfolio">
+        <h2>Portfolio Below</h2>
+        <hr></hr>
+        <ul id="images">
+          <li><a href="images/portfolio.png"><img src="images/portfolio.png"></a></li>
+          <li><a href="http://placeholder.com"><img src="http://via.placeholder.com/350x200"></a></li>
+          <li><a href="http://placeholder.com"><img src="http://via.placeholder.com/350x200"></a></li>
+          <li><a href="http://placeholder.com"><img src="http://via.placeholder.com/350x200"></a></li>
+          <li><a href="http://placeholder.com"><img src="http://via.placeholder.com/350x200"></a></li>
+          <li><a href="http://placeholder.com"><img src="http://via.placeholder.com/350x200"></a></li>
+        </ul>
+      </div>
+      <div id="contact">
+        <h2>Want to Get in Touch?</h2>
+        <hr></hr>
+        <div id="formAndInfo">
+          <form novalidate>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email Address">
+            <input type="tel" name="phone" placeholder="Phone Number">
+            <textarea placeholder="Message" rows="" cols=""></textarea>
+          </form>
+          <section class="info">
+            Note that this contact form is just props. If you'd like to contact me, drop me a message at twitter or linkedIn. I'll respond as fast as I can. Additionally, my email is revarjunr@gmail.com
+          </section>
+        </div>
+      </div>
     </main>
-
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="https://twitter.com/ThirdWorldCoder" target="_blank">t</a></li>
-        <li><a href="https://www.linkedin.com/in/arjun-pillai-459860126/" target="_blank">l</a></li>
-        <li><a href="https://plus.google.com/u/0/102571064496088105177" target="_blank">g</a></li>
-        <li><a href="https://dribbble.com/JunTheProgrammer" target="_blank">a</a></li>
-      </ul>
-    </nav>
+    <footer id="footer">
+      <section id="social">
+        <div>
+          <h3>About this page</h3>
+          <p>Made with <i class="fa fa-heart" aria-hidden="true"></i>
+ with Brunch. </p>
+          <p><i class="fa fa-music"></i>
+ helped.~</p>
+        </div>
+        <div>
+          <h3>Find me</h3>
+          <ul class="media-links">
+            <li><a href="https://www.linkedin.com/in/arjun-pillai-459860126/" target='_blank'><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/arjunepr" target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://dribbble.com/JunTheProgrammer" target='_blank'><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/ThirdWorldCoder" target='_blank'><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </section>
+      <section id="copyright">
+        <span class="brand">Jun</span> © 2017. All Rights Reversed
+      </section>
+    </footer>
   </body>
-  <script src="vendor.js"></script>
+    <script src="app.js"></script>
+    <script>
+      require('initialize');
+    </script>
 </html>
